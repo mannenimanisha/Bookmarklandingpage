@@ -1,0 +1,44 @@
+.cta {
+  text-align: center;
+  background-color: $primaryBlue;
+  color: #fff;
+  padding: 7rem;
+
+  @media (max-width: 1024px) {
+    padding: 4rem;
+  }
+
+  p {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 4rem;
+
+    @media (max-width: 1024px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  form {
+    input {
+      border-radius: 5px;
+      border: none;
+      padding: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    @media (max-width: 1024px) {
+      input,
+      button {
+        width: 100%;
+      }
+
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

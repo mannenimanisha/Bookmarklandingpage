@@ -1,0 +1,64 @@
+.faq {
+  &__accordions {
+    max-width: 60rem;
+    margin: 3rem auto;
+
+    .btn {
+      margin-top: 5rem;
+    }
+  }
+
+  &__accordion {
+    cursor: pointer;
+    padding: 1.8rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.8rem;
+    transition: 0.4s;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+
+    @media (max-width: 1024px) {
+      font-size: 1.4rem;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+
+  &__accordion:after {
+    content: '';
+    background: url('../images/icon-arrow.svg') center center no-repeat;
+    background-size: contain;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .active:after {
+    content: '';
+    background: url('../images/icon-arrow.svg') center center no-repeat;
+    background-size: contain;
+    transform: rotate(-180deg);
+  }
+
+  &__panel {
+    padding: 0 1.8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    @media (max-width: 1024px) {
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+}

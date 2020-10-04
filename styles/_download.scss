@@ -1,0 +1,27 @@
+.download {
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 15rem 0;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    &--card {
+      box-shadow: 0 0.5rem 0.8rem 0.1rem rgba(145, 148, 161, 0.3);
+      padding: 3.5rem;
+      border-radius: 10px;
+
+      &:first-child {
+        transform: translateY(-5rem);
+      }
+
+      &:last-child {
+        transform: translateY(5rem);
+      }
+    }
+  }
+}
